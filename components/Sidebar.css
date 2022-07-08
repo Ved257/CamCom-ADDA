@@ -1,0 +1,71 @@
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: #e0e0e0 0px 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s ease;
+}
+
+.sidebar-navs {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+
+
+.sidebar a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: #000000;
+  display: block;
+  z-index: 1;
+  border-block: 1px solid #e3e3e3;
+  padding: 10px;
+  white-space: nowrap;
+  font: 20px 
+
+}
+.sidebar a:hover {
+  color: #ff0000;
+  transition: ease-in-out 0.3s;
+}
+/* Keep the color of the sidebar a as red on click */
+
+.sidebar a:focus {
+  color: #ff0000;
+}
+
+.sidebar .sidebar-close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openNav {
+  padding: 20px;
+}
+
+.sidebar-open {
+  color: #e3e3e3;
+  background-color: #000000;
+  padding: 10px;
+}

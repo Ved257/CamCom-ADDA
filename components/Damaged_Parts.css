@@ -1,0 +1,25 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+      background-color: rgb(0, 0, 0);
+  }
+  
+  .show{
+      width:100%;
+      position:absolute;
+      top:5%;
+      padding: 50px;
+      border-top: 2px dotted rgb(123, 123, 123);
+      border-bottom: 2px dotted rgb(123, 123, 123);
+  }
+  
+  
+  table th{
+      background-color: rgb(167, 167, 167);
+      padding: 0;
+  }
+  
+  

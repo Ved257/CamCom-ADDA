@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Sidebar.css"
+    />
+    <!-- Import Navbar.html onto this page -->
+  </head>
+  <body>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      const element = document.getElementById("closebtn");
+      element.addEventListener("click", function () {
+        document.getElementsByClassName("sidebar").style.width = "0";
+      });
+    </script>
+    <div class="sidebar" id="mySidenav">
+      <div class="sidebar-close" onClick="closeNav()" id="closebtn">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+      </div>
+      <div class="container" style="position: absolute; top: 20%">
+        <div class="sidebar-navs">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#allClaims">All Claims</a>
+          <a href="#userManagement">User Management</a>
+          <a href="#genereateReport">Generate Report</a>
+        </div>
+      </div>
+    </div>
+    <div id="main" class="openNav">
+      <button class="sidebar-open" onclick="openNav()">&#9776;</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

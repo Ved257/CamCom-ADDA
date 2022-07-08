@@ -1,0 +1,78 @@
+.title {
+  margin: 0 0 1em;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+.title:before,
+.title:after {
+  content: " ";
+  flex: 1 0 0%;
+  height: 0.5px;
+  background: rgba(137, 137, 137, 0.8);
+  margin: 0 1.5rem 0 0;
+}
+.title:after {
+  margin: 0 0 0 1.5rem;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.card {
+  background-color: black;
+  width:160px;
+  height: 160px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card-heading{
+  padding: 5px;
+  
+}
+
+.card-body{
+  position: absolute;
+  bottom:0;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  border-top: 1px solid white;
+  padding: 10px;
+
+}
+
+.c1{
+  color: rgb(126, 50, 202);
+}
+
+.c2{
+  color: rgb(86, 180, 39);
+}
+
+.c3{
+  color:rgb(192, 45, 45)
+}
+
+.c4{
+  color:rgb(192, 148, 45)
+}
+
+.c5{
+  color:rgb(214, 53, 166)
+}
+
+.c6{
+  color:rgb(50, 149, 202)
+}
+
+.c7{
+  color:aqua
+}
